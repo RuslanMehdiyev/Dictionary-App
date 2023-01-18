@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(70, 70, 185);
+}
+.container {
+  margin-top: 3rem;
+  width: 25rem;
+  min-height: 10rem;
+  max-height: 540px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  overflow: scroll;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.content form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.content input {
+  width: 100%;
+  padding: 15px 2rem;
+  font-size: 1.3rem;
+}
+input[type="text"]:focus {
+  border: 2px solid rgb(70, 70, 185);
+}
+.content .clear {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.4rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.content .search {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  font-size: 1.2rem;
+  color: grey;
+}
+.items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.432); */
+}
+.explain{
+    width: 100%;
+}
+.items ul {
+  margin-top: 5px;
+  font-size: 13px;
+  max-height: 250px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.items ul .contain {
+  margin-top: 7px;
+}
+.items ul .contain .details {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-top: 10px;
+  padding: 5px 0;
+  padding-left: 10px;
+  border-radius: 5px;
+  border-left: 3px solid #2681dc;
+}
+
+.items ul .contain .details p {
+  opacity: 0.6;
+}
+.items ul .contain .synonyms span {
+  opacity: 0.6;
+  border-bottom: 1px dotted #2681dc;
+}
+::-webkit-scrollbar {
+  display: none;
+}
