@@ -1,4 +1,5 @@
-function Result({ meanings, phonetics }) {
+function Result(props: any) {
+  const { meanings, phonetics } = props;
   return (
     <>
       <div className="items">

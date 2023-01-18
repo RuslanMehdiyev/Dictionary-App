@@ -6,8 +6,8 @@ function Dictionary() {
   const [text, setText] = useState<string>("");
   const [showBtn, setShowBtn] = useState<boolean>(false);
   const [dataState, setState] = useState<IState | null>(null);
-  const [meanings, setMeaning] = useState<any>([]);
-  const [phonetics, setPhonetics] = useState<any>([]);
+  const [meanings, setMeaning] = useState<[]>();
+  const [phonetics, setPhonetics] = useState<[]>();
 
   const dictionaryApi = new DictionaryAPI();
 
